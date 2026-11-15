@@ -13,12 +13,4 @@ add_executable(newonemoregame main.cpp
         ending.cpp
         ending.h
         mainGame.cpp
-        mainGame.h
-        mainGame.cpp
-        location.cpp
-        ending.cpp
-        mainGame.cpp
-        mainGame.cpp
-        location.h
-        item.h
-        item.cpp)
+        mainGame.h)
