@@ -4,6 +4,7 @@
 
 #include "Player.h"
 #include "Ending.h"
+#include "Location.h"
 
 class MainGame {
 private:
@@ -24,6 +25,10 @@ private:
     int forestStage = 0;
 
     LocationType currentLocation = LocationType::Branch1;
+    Forest forest;
+    Booth boothLocation;
+
+    Location* activeLocation = nullptr;
 
     int getChoice();
 
