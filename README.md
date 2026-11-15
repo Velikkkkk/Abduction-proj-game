@@ -60,3 +60,9 @@ Future plans include the following:
 - Fully flesh out both endings.
 - Improve the interconnections between existing classes.
 - Test the game and fix any potential bugs.
+
+## Feedback Questions
+
+1. In your opinion, is it possible to optimize the game even further?
+
+2. Should anything be changed regarding the visual aspect of the selection menu?
