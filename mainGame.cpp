@@ -1,5 +1,6 @@
 
 #include "MainGame.h"
+#include "Item.h"
 
 #include <iostream>
 #include <limits>
@@ -88,11 +89,13 @@ void MainGame::branch1() {
 void MainGame::firstForest() {
 
     if (forestStage == 0) {
-        cout << "\n================================\n";
-        cout << "              FOREST\n";
-        cout << "================================\n";
 
-        cout << "[Forest entrance story goes here]\n\n";
+        // CONCEPT 3: POLYMORPHISM
+        // The base class pointer refers to a Forest object.
+        activeLocation = &forest;
+
+        // Calls Forest::showLocation() through the base class pointer.
+        activeLocation->showLocation();
 
         cout << "You found:\n";
         cout << "- 2 Candles\n";
@@ -194,14 +197,18 @@ void MainGame::firstForest() {
 
 // BOOTH
 
+// BOOTH
+
 void MainGame::booth() {
-    cout << "\n================================\n";
-    cout << "              BOOTH\n";
-    cout << "================================\n";
+
+    // CONCEPT 3: POLYMORPHISM
+    // The base class pointer refers to a Booth object.
+    activeLocation = &boothLocation;
+
+    // Calls Booth::showLocation() through the base class pointer.
+    activeLocation->showLocation();
 
     showLocationInfo();
-
-    cout << "[Booth story goes here]\n\n";
 
     cout << "1. Continue to the Ghost Forest\n";
     cout << "> ";
@@ -210,7 +217,8 @@ void MainGame::booth() {
 
     if (choice == 1) {
         currentLocation = LocationType::GhostForest;
-    } else {
+    }
+    else {
         cout << "\nInvalid choice. Try again.\n";
     }
 }
