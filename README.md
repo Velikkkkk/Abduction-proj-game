@@ -1,5 +1,4 @@
-#HappiestDay
-
+## HappiestDay
 ## Project Description
 
 "Happiest Day" is a text-based adventure game developed in C++.
